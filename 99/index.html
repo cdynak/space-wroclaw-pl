@@ -217,6 +217,12 @@ h2 {
   padding: 1mm;
   border: 1px solid rgba(22, 56, 43, 0.15);
 }
+.qr-code a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
 .qr-code img {
   width: 100%;
   height: 100%;
@@ -236,6 +242,14 @@ h2 {
   line-height: 1.35;
   margin: 0 0 1mm;
   color: #4A4636;
+}
+.cta-desc a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: rgba(169, 129, 47, 0.4);
+}
+.cta-desc a:hover {
+  text-decoration-color: var(--brass);
 }
 .web-address {
   font-family: "IBM Plex Mono", monospace;
@@ -348,11 +362,13 @@ h2 {
   <div class="cta-area">
     <div class="qr-code">
       <!-- Dynamic QR code directly pointing to the WhatsApp invitation -->
-      <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://chat.whatsapp.com/CneMNBsRDCO46BkIK3gt6K&color=16382b" alt="QR Code WhatsApp Community">
+      <a href="https://chat.whatsapp.com/CneMNBsRDCO46BkIK3gt6K" target="_blank" rel="noopener">
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://chat.whatsapp.com/CneMNBsRDCO46BkIK3gt6K&color=16382b" alt="QR Code WhatsApp Community">
+      </a>
     </div>
     <div class="cta-text">
       <div class="cta-heading">Dołącz do nas!</div>
-      <p class="cta-desc">Zeskanuj kod QR aparatem w telefonie, aby dołączyć do naszej społeczności i grupy roboczej na <strong>WhatsApp</strong>.</p>
+      <p class="cta-desc">Zeskanuj kod QR aparatem w telefonie, aby dołączyć do naszej społeczności i grupy roboczej na <strong><a href="https://chat.whatsapp.com/CneMNBsRDCO46BkIK3gt6K" target="_blank" rel="noopener">WhatsApp</a></strong>.</p>
       <div class="web-address"><a href="https://space.wroclaw.pl">space.wroclaw.pl</a></div>
     </div>
   </div>
