@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rok Podróży Kosmicznych — Wrocław 2027 · space.wroclaw.pl</title>
+<meta name="description" content="Oddolna inicjatywa mieszkańców Wrocławia: rok 2027 Rokiem Podróży Kosmicznych. 100-lecie założenia Verein für Raumschiffahrt i 200. rocznica śmierci Ernsta Chladniego. Dwie kosmiczne rocznice, jeden adres: Kuźnicza 22.">
+<meta property="og:title" content="Rok Podróży Kosmicznych — Wrocław 2027">
+<meta property="og:description" content="Dwie kosmiczne rocznice, jeden adres: Kuźnicza 22. 100 lat VfR · 200 lat od śmierci Chladniego.">
+<meta property="og:url" content="https://space.wroclaw.pl/">
+<link rel="canonical" href="https://space.wroclaw.pl/">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=IBM+Plex+Serif:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F2ECDB; --ink:#23281F; --green:#16382B; --green-2:#2E5C46;
+  --brass:#A9812F; --line:rgba(22,56,43,.28); --cream:#F2ECDB;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:"IBM Plex Serif",Georgia,serif;font-size:1.0625rem;line-height:1.65}
+a{color:var(--green-2)}
+a:focus-visible{outline:3px solid var(--brass);outline-offset:2px}
+.mono{font-family:"IBM Plex Mono",monospace}
+
+/* ---------- hero (zielona płyta à la „Die Rakete” 1927) ---------- */
+.plate{background:var(--green);color:var(--cream);padding:0 0 3.5rem}
+nav{display:flex;flex-wrap:wrap;gap:.25rem 1.4rem;align-items:baseline;
+  padding:1.1rem 1.25rem;max-width:62rem;margin:0 auto}
+nav .brand{font-family:"IBM Plex Mono",monospace;font-size:.8rem;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--cream);text-decoration:none;margin-right:auto}
+nav a{color:var(--cream);text-decoration:none;font-family:"IBM Plex Mono",monospace;
+  font-size:.8rem;letter-spacing:.06em;border-bottom:1px solid transparent}
+nav a:hover{border-bottom-color:var(--brass)}
+.hero{max-width:62rem;margin:0 auto;padding:2.5rem 1.25rem 0;display:grid;
+  grid-template-columns:1.1fr .9fr;gap:2rem;align-items:center}
+@media (max-width:760px){.hero{grid-template-columns:1fr}}
+.eyebrow{font-family:"IBM Plex Mono",monospace;font-size:.75rem;letter-spacing:.22em;
+  text-transform:uppercase;color:var(--brass);margin:0 0 1rem}
+h1{font-family:Marcellus,serif;font-weight:400;font-size:clamp(2rem,5vw,3.1rem);
+  line-height:1.12;margin:0 0 1.1rem;color:var(--cream)}
+.lead{font-size:1.1rem;max-width:34rem;color:#E4DEC9}
+.cta{display:flex;gap:.75rem;flex-wrap:wrap;margin-top:1.6rem}
+.cta a{font-family:"IBM Plex Mono",monospace;font-size:.85rem;text-decoration:none;
+  padding:.7rem 1.1rem;border:1px solid var(--brass);color:var(--cream)}
+.cta a.primary{background:var(--brass);color:var(--green)}
+.cta a:hover{background:var(--cream);color:var(--green);border-color:var(--cream)}
+
+/* orbita — sygnatura strony */
+.orbit-wrap{display:flex;justify-content:center}
+.orbit-wrap svg{width:min(100%,380px);height:auto;display:block}
+.orbit-path{fill:none;stroke:var(--cream);stroke-width:1.2;stroke-dasharray:4 5;opacity:.85}
+@media (prefers-reduced-motion:no-preference){
+  .orbit-path{animation:orbit-dash 60s linear infinite}
+  @keyframes orbit-dash{to{stroke-dashoffset:-540}}
+}
+.orbit-node{fill:var(--brass)}
+.orbit-center{fill:var(--cream)}
+.orbit-label{font-family:"IBM Plex Mono",monospace;font-size:13px;fill:var(--cream);letter-spacing:.08em}
+.orbit-label.small{font-size:10.5px;fill:#C9C2A8}
+
+/* ---------- treść ---------- */
+main{max-width:44rem;margin:0 auto;padding:1rem 1.25rem 3rem}
+section{margin-top:3.2rem}
+h2{font-family:Marcellus,serif;font-weight:400;font-size:1.65rem;line-height:1.2;
+  margin:0 0 .4rem;color:var(--green)}
+h2 + .rule{width:3.5rem;height:2px;background:var(--brass);margin-bottom:1.3rem}
+h3{font-family:Marcellus,serif;font-weight:400;font-size:1.2rem;color:var(--green);margin:1.8rem 0 .4rem}
+.years{font-family:"IBM Plex Mono",monospace;color:var(--brass);font-size:.85rem;letter-spacing:.14em}
+
+/* oś czasu: rok w mono, opis obok */
+dl.timeline{margin:1.4rem 0 0;padding:0}
+dl.timeline div{display:grid;grid-template-columns:6.5rem 1fr;gap:1rem;
+  padding:.8rem 0;border-top:1px solid var(--line)}
+dl.timeline dt{font-family:"IBM Plex Mono",monospace;font-size:.9rem;color:var(--brass);margin:0;padding-top:.15rem}
+dl.timeline dd{margin:0}
+dl.timeline dd strong{color:var(--green)}
+
+ul.clean{padding-left:1.1rem}
+ul.clean li{margin:.45rem 0}
+
+.note{border-left:3px solid var(--brass);padding:.2rem 0 .2rem 1rem;margin:1.4rem 0;
+  font-style:italic;color:#4A4636}
+
+footer{background:var(--green);color:#C9C2A8;margin-top:4rem}
+footer .inner{max-width:44rem;margin:0 auto;padding:2.2rem 1.25rem 2.6rem;font-size:.9rem}
+footer h2{color:var(--cream);font-size:1.15rem}
+footer a{color:var(--cream)}
+footer ul{padding-left:1.1rem;margin:.6rem 0 1.6rem}
+footer li{margin:.35rem 0}
+.fineprint{font-family:"IBM Plex Mono",monospace;font-size:.72rem;letter-spacing:.05em;
+  border-top:1px solid rgba(242,236,219,.25);padding-top:1.1rem;margin-top:1.1rem}
+</style>
+</head>
+<body>
+
+<header class="plate">
+  <nav>
+    <a class="brand" href="/">space.wroclaw.pl</a>
+    <a href="#historia">Historia</a>
+    <a href="#kontakt">Kontakt</a>
+  </nav>
+  <div class="hero">
+    <div>
+      <p class="eyebrow">Inicjatywa mieszkańców Wrocławia</p>
+      <h1>2027 — Rok Podróży Kosmicznych we&nbsp;Wrocławiu</h1>
+      <p class="lead">Dwie kosmiczne rocznice spotykają się w jednym roku i pod jednym
+        adresem. Sto lat temu przy dzisiejszej ul.&nbsp;Kuźniczej&nbsp;22 powstało
+        Verein für Raumschiffahrt — jedno z pierwszych na świecie towarzystw podróży
+        kosmicznych. Dwieście lat temu zmarł we Wrocławiu Ernst Chladni, twórca
+        meteorytyki. Chcemy, aby Wrocław o tym pamiętał.</p>
+      <div class="cta">
+        <a class="primary" href="https://www.wroclaw.pl/go/wydarzenia/edukacja-i-rozwoj/1412536-99-lecie-zalozenia-towarzystwa-podrozy-kosmicznych-we-wroclawiu">Spotkanie — niedziela 5.07.2026, 19:00 →</a>
+      </div>
+    </div>
+    <div class="orbit-wrap" aria-hidden="true">
+      <svg viewBox="0 0 380 340" role="img" aria-label="Trzy daty — 1827, 1927 i 2027 — na jednej orbicie wokół adresu Kuźnicza 22">
+        <ellipse class="orbit-path" cx="190" cy="170" rx="150" ry="105" transform="rotate(-18 190 170)"/>
+        <circle class="orbit-center" cx="190" cy="170" r="5"/>
+        <text class="orbit-label small" x="190" y="196" text-anchor="middle">KUŹNICZA 22</text>
+        <circle class="orbit-node" cx="66" cy="230" r="6"/>
+        <text class="orbit-label" x="66" y="258" text-anchor="middle">1827</text>
+        <circle class="orbit-node" cx="176" cy="63" r="6"/>
+        <text class="orbit-label" x="176" y="48" text-anchor="middle">1927</text>
+        <circle class="orbit-node" cx="322" cy="132" r="6"/>
+        <text class="orbit-label" x="322" y="118" text-anchor="middle">2027</text>
+      </svg>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section id="rocznice">
+    <h2>Dwie rocznice, jeden adres</h2>
+    <div class="rule"></div>
+
+    <h3><span class="years">1927 → 2027</span><br>Sto lat Towarzystwa Podróży Kosmicznych</h3>
+    <p>5 lipca 1927 roku w gospodzie „Zum goldenen Zepter” („Pod Złotym Berłem”)
+      przy Schmiedebrücke 22 — dzisiejszej ulicy Kuźniczej 22 — grupa pasjonatów
+      założyła <strong>Verein für Raumschiffahrt (VfR)</strong>, Towarzystwo Podróży
+      Kosmicznych: pierwsze w Niemczech i jedno z pierwszych na świecie. Towarzystwo
+      wydawało pismo „Die Rakete”, a w jego szeregach działali ludzie, którzy
+      ukształtowali nowoczesną astronautykę — m.in. Hermann Oberth, Willy Ley
+      i&nbsp;Max Valier; później dołączył młody Wernher von Braun. Droga, która
+      zaprowadziła ludzkość na Księżyc, ma jeden ze swoich początków we Wrocławiu.</p>
+
+    <h3><span class="years">1827 → 2027</span><br>Dwieście lat od śmierci Ernsta Chladniego</h3>
+    <p>Dokładnie sto lat przed założeniem VfR, w 1827 roku, zmarł we Wrocławiu
+      <strong>Ernst Florens Friedrich Chladni</strong> — twórca nowoczesnej meteorytyki
+      i akustyki, pierwszy uczony, który dowodził kosmicznego pochodzenia meteorytów.
+      Upamiętnia go tablica w Muzeum Mineralogicznym Uniwersytetu Wrocławskiego,
+      w którym można oglądać kolekcję 160 meteorytów — również przy ul. Kuźniczej 22.</p>
+  </section>
+
+  <section id="historia">
+    <h2>Oś czasu</h2>
+    <div class="rule"></div>
+    <dl class="timeline">
+      <div><dt>1827</dt><dd>We Wrocławiu umiera Ernst Chladni, ojciec meteorytyki.</dd></div>
+      <div><dt>5 VII 1927</dt><dd>W gospodzie „Zum goldenen Zepter” przy Schmiedebrücke 22 powstaje <strong>Verein für Raumschiffahrt</strong>.</dd></div>
+      <div><dt>1927–1929</dt><dd>VfR wydaje we Wrocławiu „Die Rakete” — jedno z pierwszych czasopism poświęconych podróżom kosmicznym.</dd></div>
+      <div><dt>1929–1934</dt><dd>Działalność przenosi się do Berlina (Raketenflugplatz); doświadczenia członków VfR współtworzą fundamenty programów rakietowych, które dekady później doprowadzą do lotów załogowych i programu Apollo.</dd></div>
+      <div><dt>1994</dt><dd>Przy Kuźniczej 22 otwiera się oddział Muzeum Mineralogicznego UWr — z wystawą meteorytów.</dd></div>
+      <div><dt>2006</dt><dd>Polskie Towarzystwo Meteorytowe i Polskie Towarzystwo Akustyczne fundują w muzeum tablicę pamięci Chladniego.</dd></div>
+      <div><dt>2020</dt><dd>Wydarzenie „Z Wrocławia na Księżyc – kosmiczne podróże wczoraj i dziś” (NTKS/DSKG, ifa, Goethe-Institut) gromadzi ponad stu gości; powstaje polsko-niemiecki komiks edukacyjny „Von Breslau zum Mond”.</dd></div>
+      <div><dt>5 VII 2026</dt><dd>Otwarte spotkanie w 99. rocznicę założenia VfR — Kuźnicza 22, godz. 19:00.</dd></div>
+      <div><dt>2027</dt><dd>Stulecie VfR i dwusetlecie Chladniego. Jesienią Polska gości w Poznaniu International Astronautical Congress — największe światowe wydarzenie sektora kosmicznego.</dd></div>
+    </dl>
+  </section>
+
+  <section id="plan">
+    <h2>Co chcemy osiągnąć</h2>
+    <div class="rule"></div>
+    <ul class="clean">
+      <li><strong>Uchwała Rady Miejskiej Wrocławia</strong> ustanawiająca rok 2027
+        Rokiem Podróży Kosmicznych — na wzór Roku Ossolineum (2026).</li>
+      <li><strong>Konferencja stulecia 5 lipca 2027</strong> w historycznym miejscu
+        założenia VfR, z udziałem nauki, kultury i wrocławskiego sektora kosmicznego.</li>
+      <li><strong>Program wydarzeń na cały rok 2027</strong> — edukacyjnych,
+        kulturalnych i popularnonaukowych, oparty w dużej mierze na istniejących
+        partnerach, materiałach i infrastrukturze miasta.</li>
+      <li><strong>Trwały ślad pamięci</strong> — m.in. starania o tablicę pamiątkową
+        w trzech językach przy Kuźniczej 22.</li>
+    </ul>
+    <p class="note">Inicjatywa jest oddolna i otwarta. Prowadzimy rozmowy z uczelniami,
+      instytucjami kultury, organizacjami polsko-niemieckimi i firmami sektora
+      kosmicznego — listę partnerów ogłosimy, gdy ustalenia staną się wiążące.</p>
+  </section>
+
+  <section id="kontakt">
+    <h2>Dołącz do inicjatywy</h2>
+    <div class="rule"></div>
+    <p>Szukamy partnerów instytucjonalnych, prelegentów, wolontariuszy i patronów —
+      a także osób, które po prostu chcą pomóc. Napisz na LinkedIn:
+      <a href="https://www.linkedin.com/in/cdynak" rel="me">linkedin.com/in/cdynak</a></p>
+  </section>
+</main>
+
+<footer>
+  <div class="inner">
+    <h2>Źródła i materiały</h2>
+    <ul>
+      <li><a href="https://pl.wikipedia.org/wiki/Verein_f%C3%BCr_Raumschiffahrt">Verein für Raumschiffahrt — Wikipedia</a></li>
+      <li><a href="https://www.ifa.de/veranstaltung/aus-breslau-zum-mond-raumfahrt-frueher-und-heute/">„Aus Breslau zum Mond” — ifa, 2020</a></li>
+      <li><a href="https://ntks.pl/web/2020-3/">Relacja NTKS/DSKG Breslau z wydarzenia 2020</a></li>
+      <li><a href="https://www.bildung.pl/wp-content/uploads/2021/03/Comic_Von-Breslau-zum-Mond.pdf">Komiks „Von Breslau zum Mond” (PDF)</a></li>
+      <li><a href="https://muzmin.uwr.edu.pl/">Muzeum Mineralogiczne UWr</a></li>
+    </ul>
+    <p class="fineprint">SPACE.WROCLAW.PL · ODDOLNA INICJATYWA MIESZKAŃCÓW ·
+      KONTAKT: LINKEDIN.COM/IN/CDYNAK</p>
+  </div>
+</footer>
+
+</body>
+</html>
