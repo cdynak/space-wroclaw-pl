@@ -21,8 +21,8 @@ body {
   background: #c3bfb4;
   color: var(--ink);
   font-family: "IBM Plex Serif", Georgia, serif;
-  font-size: 9.5pt;
-  line-height: 1.45;
+  font-size: 10pt;
+  line-height: 1.4;
   margin: 0;
   padding: 40px 20px;
   display: flex;
@@ -37,7 +37,7 @@ body {
   height: 210mm;
   background: #FCFBF7;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
-  padding: 10mm 12mm 8mm;
+  padding: 10mm 12mm 10mm;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -49,20 +49,20 @@ body {
 .flyer::before {
   content: "";
   position: absolute;
-  top: 4mm;
-  left: 4mm;
-  right: 4mm;
-  bottom: 4mm;
+  top: 4.5mm;
+  left: 4.5mm;
+  right: 4.5mm;
+  bottom: 4.5mm;
   border: 1px solid rgba(22, 56, 43, 0.25);
   pointer-events: none;
 }
 .flyer::after {
   content: "";
   position: absolute;
-  top: 5.2mm;
-  left: 5.2mm;
-  right: 5.2mm;
-  bottom: 5.2mm;
+  top: 5.7mm;
+  left: 5.7mm;
+  right: 5.7mm;
+  bottom: 5.7mm;
   border: 0.5px solid rgba(169, 129, 47, 0.4);
   pointer-events: none;
 }
@@ -70,36 +70,36 @@ body {
 /* Nagłówek */
 header {
   text-align: center;
-  margin-bottom: 3mm;
+  margin-bottom: 1mm;
 }
 .brand {
   font-family: "IBM Plex Mono", monospace;
-  font-size: 7.5pt;
+  font-size: 8.5pt;
   font-weight: 600;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--green-light);
-  margin: 0 0 2mm;
+  margin: 0 0 1mm;
 }
 h1 {
   font-family: "Marcellus", serif;
   font-weight: 400;
-  font-size: 15pt;
+  font-size: 16pt;
   line-height: 1.15;
   color: var(--green);
-  margin: 0 0 1mm;
+  margin: 0 0 0.5mm;
   text-transform: uppercase;
 }
 .subtitle {
   font-family: "IBM Plex Mono", monospace;
-  font-size: 7pt;
+  font-size: 7.5pt;
   color: var(--brass);
   letter-spacing: 0.08em;
-  margin: 0 0 2mm;
+  margin: 0 0 1.5mm;
   text-transform: uppercase;
 }
 .divider {
-  width: 30mm;
+  width: 35mm;
   height: 1px;
   background: var(--brass);
   margin: 0 auto;
@@ -110,8 +110,8 @@ h1 {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  gap: 3.5mm;
+  justify-content: space-between;
+  margin: 2mm 0;
 }
 
 h2 {
@@ -122,10 +122,11 @@ h2 {
   margin: 0 0 1mm;
 }
 
+/* Układ dwukolumnowy dla rocznic, oszczędzający miejsce pionowe */
 .anniversaries {
-  display: flex;
-  flex-direction: column;
-  gap: 2.5mm;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5mm;
 }
 .anniversary-item {
   border-left: 2px solid var(--brass);
@@ -136,36 +137,49 @@ h2 {
   font-size: 7.5pt;
   font-weight: 600;
   color: var(--brass);
-  letter-spacing: 0.05em;
-  margin-bottom: 0.5mm;
+  letter-spacing: 0.03em;
+  margin-bottom: 0.8mm;
 }
 .anniversary-text {
   margin: 0;
-  font-size: 8.5pt;
+  font-size: 8.8pt;
   line-height: 1.35;
 }
 .anniversary-text strong {
   color: var(--green);
 }
 
+/* Obrazek dopasowany do wysokości, z ramką przylegającą ściśle do krawędzi */
+.flyer-image {
+  max-width: 100%;
+  max-height: 58mm;
+  width: auto;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border: 1px solid rgba(22, 56, 43, 0.15);
+  padding: 0.8mm;
+  background: white;
+}
+
 .goals {
   background: rgba(22, 56, 43, 0.03);
   padding: 2.5mm 3.5mm;
   border-radius: 2px;
-  border: 1px dashed rgba(22, 56, 43, 0.1);
+  border: 1px dashed rgba(22, 56, 43, 0.15);
 }
 .goals h2 {
   font-size: 10pt;
-  margin-bottom: 1.5mm;
+  margin-bottom: 1mm;
 }
 .goals ul {
   margin: 0;
   padding-left: 4mm;
-  font-size: 8pt;
+  font-size: 8.5pt;
   line-height: 1.4;
 }
 .goals li {
-  margin-bottom: 0.8mm;
+  margin-bottom: 0.5mm;
 }
 .goals li:last-child {
   margin-bottom: 0;
@@ -178,11 +192,11 @@ h2 {
   gap: 5mm;
   border-top: 1px solid rgba(22, 56, 43, 0.12);
   padding-top: 3.5mm;
-  margin-top: 2mm;
+  margin-top: auto;
 }
 .qr-code {
-  width: 20mm;
-  height: 20mm;
+  width: 24mm;
+  height: 24mm;
   flex-shrink: 0;
   background: white;
   padding: 1mm;
@@ -198,19 +212,19 @@ h2 {
 }
 .cta-heading {
   font-family: "Marcellus", serif;
-  font-size: 9.5pt;
+  font-size: 10.5pt;
   color: var(--green);
   margin: 0 0 1mm;
 }
 .cta-desc {
-  font-size: 7.5pt;
-  line-height: 1.3;
-  margin: 0 0 1.5mm;
+  font-size: 8pt;
+  line-height: 1.35;
+  margin: 0 0 1mm;
   color: #4A4636;
 }
 .web-address {
   font-family: "IBM Plex Mono", monospace;
-  font-size: 8pt;
+  font-size: 9pt;
   font-weight: 600;
   color: var(--green-light);
   letter-spacing: 0.05em;
@@ -243,21 +257,24 @@ h2 {
     border: none;
     box-shadow: none;
     background: #ffffff;
-    padding: 10mm 12mm 8mm;
+    padding: 10mm 12mm 10mm;
   }
   .flyer::before {
-    top: 4mm;
-    left: 4mm;
-    right: 4mm;
-    bottom: 4mm;
+    top: 4.5mm;
+    left: 4.5mm;
+    right: 4.5mm;
+    bottom: 4.5mm;
     border: 1px solid #000000;
   }
   .flyer::after {
-    top: 5.2mm;
-    left: 5.2mm;
-    right: 5.2mm;
-    bottom: 5.2mm;
+    top: 5.7mm;
+    left: 5.7mm;
+    right: 5.7mm;
+    bottom: 5.7mm;
     border: 0.5px solid #000000;
+  }
+  .flyer-image {
+    border: 1px solid #000000;
   }
   .goals {
     background: none;
@@ -277,17 +294,20 @@ h2 {
   </header>
 
   <div class="content">
+    <!-- Historyczna grafika umieszczona na samej górze sekcji content -->
+    <img class="flyer-image" src="pod-zlotym-berlem_die-rackete-1927.jpg" alt="Historyczna gospoda 'Zum goldenen Zepter' oraz okładka czasopisma 'Die Rakete' z 1927 roku">
+
     <div class="anniversaries">
       <div class="anniversary-item">
-        <div class="anniversary-title">1927 → 2027 · STO LAT TOWARZYSTWA PODRÓŻY KOSMICZNYCH</div>
+        <div class="anniversary-title">1927 → 2027 · 100 LAT VfR</div>
         <p class="anniversary-text">
-          5 lipca 1927 roku przy dzisiejszej <strong>ul. Kuźniczej 22</strong> we Wrocławiu powstało <strong>Verein für Raumschiffahrt (VfR)</strong> – jedno z pierwszych towarzystw rakietowych na świecie. W jego szeregach rodziły się idee lotów kosmicznych, które zaprowadziły ludzkość na Księżyc.
+          5 lipca 1927 r. przy <strong>ul. Kuźniczej 22</strong> powstało <strong>Verein für Raumschiffahrt (VfR)</strong> – pierwsza organizacja tego typu na świecie, której członkowie utorowali drogę na Księżyc.
         </p>
       </div>
       <div class="anniversary-item">
-        <div class="anniversary-title">1827 → 2027 · 200 LAT OD ŚMIERCI ERNSTA CHLADNIEGO</div>
+        <div class="anniversary-title">1827 → 2027 · 200 LAT CHLADNIEGO</div>
         <p class="anniversary-text">
-          Dokładnie sto lat wcześniej zmarł we Wrocławiu wybitny badacz, twórca meteorytyki, który jako pierwszy udowodnił naukowe, pozaziemskie pochodzenie meteorytów. Dzisiejsze Muzeum Mineralogiczne przy <strong>ul. Kuźniczej 22</strong> kontynuuje te tradycje.
+          Dokładnie sto lat wcześniej zmarł we Wrocławiu wybitny badacz <strong>Ernst Chladni</strong>, ojciec meteorytyki, który jako pierwszy udowodnił kosmiczne pochodzenie meteorytów.
         </p>
       </div>
     </div>
